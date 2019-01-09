@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidAnimation</string>
+    <string name="txt_sign_in">SpringAnim</string>
+    <string name="txt_fling_anim">FlingAnim</string>
+    <string name="txt_desc_anim">DescAnim</string>
+    <string name="btn_show_up">showUp</string>
+</resources>
