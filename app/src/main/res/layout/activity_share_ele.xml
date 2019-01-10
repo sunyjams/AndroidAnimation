@@ -3,11 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <ImageView
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_centerInParent="true"
-        android:src="@mipmap/ic_launcher"
-        android:transitionName="img" />
+        android:id="@+id/share_play"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:transitionName="img"
+        android:src="@drawable/play_anim" />
 
 </RelativeLayout>
