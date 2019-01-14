@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ShareEleActivity" />
+        <activity android:name=".LottieActivity" />
+        <activity android:name=".LottieListActivity" />
     </application>
 
 </manifest>

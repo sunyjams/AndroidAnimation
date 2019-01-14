@@ -4,4 +4,9 @@
     <string name="txt_fling_anim">FlingAnim</string>
     <string name="txt_desc_anim">DescAnim</string>
     <string name="btn_show_up">showUp</string>
+    <string name="svg_intro">上面的按钮可以重复点击来查看使用SVG来做ICON时的切换效果。\n
+        API 21 之后提供的新特性，使用 VectorDrawable 和 AnimatedVectorDrawable 来支持这种动画。
+        支持与屏幕大小和密度无关的向量路径来绘图。这种动画再处理icon的转换动画时最好，更加有趣的则是由Airbnb提供的。
+    </string>
+    <string name="lottie_hook">去看看Lottie能做些什么</string>
 </resources>

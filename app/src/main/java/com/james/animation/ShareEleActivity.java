@@ -1,6 +1,5 @@
 package com.james.animation;
 
-import android.annotation.TargetApi;
 import android.graphics.drawable.Animatable2;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.graphics.drawable.Drawable;
@@ -11,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.transition.Fade;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * Created by James
@@ -21,6 +21,7 @@ import android.widget.ImageView;
 public class ShareEleActivity extends AppCompatActivity {
 
     private ImageView playImg;
+    private TextView lottieTextView;
     private AnimatedVectorDrawable vectorDrawable;
     private boolean isPlay = false;
 
@@ -32,6 +33,7 @@ public class ShareEleActivity extends AppCompatActivity {
         getWindow().setExitTransition(new Fade().setDuration(2000));
 
         playImg = findViewById(R.id.share_play);
+        lottieTextView = findViewById(R.id.share_lottie);
 
         getSupportActionBar().setTitle("SVG ANIMATION");
 
@@ -44,6 +46,13 @@ public class ShareEleActivity extends AppCompatActivity {
                     vectorDrawable.registerAnimationCallback(callback);
                 }
                 vectorDrawable.start();
+            }
+        });
+
+        lottieTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LottieListActivity.start(ShareEleActivity.this);
             }
         });
     }
