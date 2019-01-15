@@ -1,0 +1,33 @@
+package com.james.animation.res;
+
+import android.graphics.Color;
+
+/**
+ * Created by James
+ * Date 2019/1/15.
+ * description
+ */
+
+public class JsonRes {
+
+    public static final int[] BG_COLORS = {
+            Color.GREEN,
+            Color.WHITE,
+            Color.parseColor("#FFB507"),
+            Color.WHITE,
+    };
+
+    public static final String[] JSON_NAMES = {
+            "loading_football.json",
+            "the_victory.json",
+            "sold_out.json",
+            "night_mode.json"
+    };
+
+    public static final String[] FILE_DESC = {
+            "一个正在加载中的足球，背景色为绿色",
+            "一个象征胜利的段彩动画，背景为白色",
+            "已经卖光的动画效果，背景色为橙色",
+            "白天黑夜模式切换动画，背景为黑色"
+    };
+}
