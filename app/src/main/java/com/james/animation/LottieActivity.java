@@ -26,7 +26,6 @@ public class LottieActivity extends Activity {
 
     private FrameLayout bgLayout;
     private LottieAnimationView mLottieAnimationView;
-    private String sharedEle;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

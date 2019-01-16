@@ -1,7 +1,7 @@
 package com.james.animation.adapter;
 
 import android.app.Activity;
-import android.content.Context;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -49,7 +49,8 @@ public class LottieAdapter extends RecyclerView.Adapter<LottieAdapter.HV> {
     public void onBindViewHolder(final HV holder, final int position) {
         holder.titleTextView.setText(mDatas.get(position).getRes());
         holder.descTextView.setText(mDatas.get(position).getDesc());
-        holder.iconImageView.setBackgroundColor(mDatas.get(position).getBg());
+//        holder.iconImageView.setBackgroundColor(mDatas.get(position).getBg());
+        holder.iconImageView.setImageDrawable(new ColorDrawable(mDatas.get(position).getBg()));
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
